@@ -1,0 +1,13 @@
+[Unit]
+Description=Service for H@H
+After=local-fs.target remote-fs.target network.target
+
+[Service]
+User=hath
+WorkingDirectory=/home/hath/hath
+SuccessExitStatus=143
+ExecStart=/usr/bin/java -jar HentaiAtHome.jar
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
