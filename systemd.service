@@ -1,5 +1,5 @@
 [Unit]
-Description=Service for H@H
+Description=H@H service
 After=local-fs.target remote-fs.target network.target
 
 [Service]
